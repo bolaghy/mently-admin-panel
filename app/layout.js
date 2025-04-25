@@ -1,7 +1,6 @@
 // This is a Next.js layout component that wraps around the entire application.
 import React from "react";
 import "./globals.css";
-import SideBar from "@/components/SideBar";
 
 export const metadata = {
   title: "My Application",
@@ -11,10 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <SideBar>{children}</SideBar>
-        
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
